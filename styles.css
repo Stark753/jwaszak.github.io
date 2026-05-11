@@ -1,0 +1,168 @@
+:root {
+    --light-bg: #ffffff;
+    --light-text: #333333;
+    --light-secondary: #666666;
+    --dark-bg: #121212;
+    --dark-text: #f0f0f0;
+    --dark-secondary: #aaaaaa;
+    --accent-color: #007bff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    color: var(--light-text);
+    background-color: var(--light-bg);
+}
+
+body.dark-mode {
+    color: var(--dark-text);
+    background-color: var(--dark-bg);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--light-text);
+}
+
+body.dark-mode .theme-toggle {
+    color: var(--dark-text);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem 2rem;
+}
+
+.hero {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.role-location {
+    font-size: 0.9rem;
+    color: var(--light-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+body.dark-mode .role-location {
+    color: var(--dark-secondary);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+}
+
+.description {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--light-text);
+}
+
+body.dark-mode .description {
+    color: var(--dark-text);
+}
+
+.projects {
+    margin-bottom: 3rem;
+}
+
+.projects h2, .contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.projects-intro {
+    margin-bottom: 2rem;
+    color: var(--light-secondary);
+}
+
+body.dark-mode .projects-intro {
+    color: var(--dark-secondary);
+}
+
+.project {
+    margin-bottom: 2.5rem;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin: 0.3rem 0;
+}
+
+.project ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project li {
+    margin-bottom: 0.3rem;
+}
+
+.contact {
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--light-secondary);
+    border-top: 1px solid #eeeeee;
+}
+
+body.dark-mode footer {
+    color: var(--dark-secondary);
+    border-top: 1px solid #333333;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .projects h2, .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 0 1rem 1.5rem;
+    }
+}
