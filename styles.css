@@ -74,6 +74,7 @@ body.dark-mode .role-location {
     margin-bottom: 1rem;
     font-size: 1rem;
     color: var(--light-text);
+    text-align: justify;
 }
 
 body.dark-mode .description {
@@ -87,7 +88,6 @@ body.dark-mode .description {
 .projects h2, .contact h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -95,6 +95,7 @@ body.dark-mode .description {
 .projects-intro {
     margin-bottom: 2rem;
     color: var(--light-secondary);
+    text-align: justify;
 }
 
 body.dark-mode .projects-intro {
@@ -112,6 +113,7 @@ body.dark-mode .projects-intro {
 
 .project p {
     margin: 0.3rem 0;
+    text-align: justify;
 }
 
 .project ul {
@@ -151,6 +153,22 @@ footer {
 body.dark-mode footer {
     color: var(--dark-secondary);
     border-top: 1px solid #333333;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+    display: block;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
