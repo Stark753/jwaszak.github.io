@@ -108,10 +108,10 @@ body.dark-mode .projects-intro {
 .project {
     width: calc(50% - 1rem);
     margin-bottom: 2rem;
-    border: 1px solid #cccccc;
+    border: 1px solid #333333;
     padding: 1rem;
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
 }
 
 .project h3 {
