@@ -169,6 +169,8 @@ body.dark-mode footer {
     object-fit: cover;
     margin: 1rem 0;
     display: block;
+    float: right;
+    margin-left: 1rem;
 }
 
 .project-image {
